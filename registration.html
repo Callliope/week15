@@ -13,8 +13,8 @@
             color: red;
         }
 
-        .minttheme {
-            background-color: rgb(230, 137, 173);
+        body {
+            background-color: rgb(207, 207, 207);
         }
     </style>
 </head>
@@ -73,6 +73,7 @@
             <option value="mint">Мятная</option>
             <option value="sea">Морская</option>
             <option value="pink">Гламурная</option>
+            <option value="standart">Стандартная</option>
 
         </select>
     </div>
@@ -111,6 +112,8 @@
                 document.body.style.backgroundColor = "rgb(137, 200, 230)";
             if (document.getElementById("theme").value == "pink")
                 document.body.style.backgroundColor = "rgb(230, 137, 173)";
+            if (document.getElementById("theme").value == "standart")
+                document.body.style.backgroundColor = "rgb(207, 207, 207)";
 
         }
     </script>
