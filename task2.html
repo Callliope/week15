@@ -54,8 +54,17 @@
             var operation;
             let x = document.getElementById("first");
             let y = document.getElementById("second");
+            let secondnum = document.getElementById("second")
             operation = Number(x.value) / Number(y.value);
-            document.getElementById('result_multi').innerHTML = operation;
+            if (secondnum.value == "0") {
+                alert("На ноль делить нельзя");
+                document.getElementById("result_multi").innerHTML = "На ноль делить нельзя";
+
+            } else {
+                document.getElementById('result_multi').innerHTML = "";
+                document.getElementById('result_multi').innerHTML = operation;
+            }
+
         }
 
         function multiplyFunction() {
